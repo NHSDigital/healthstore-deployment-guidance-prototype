@@ -2,3 +2,24 @@
 @import "nhsuk-frontend/dist/nhsuk";
 
 // Add your custom CSS/Sass styles below.
+.nhsuk-phase-banner {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d8dde0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  &__content__tag {
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    color: #212b32;
+  }
+}

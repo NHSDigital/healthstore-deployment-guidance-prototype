@@ -3,33 +3,57 @@
     - change the header and footer
     - add custom CSS and JavaScript
 -->
-
-<!-- Extends the prototype kit template which in turn extends the NHS.UK frontend template -->
 {% extends "prototype-kit-template.njk" %}
 
 {% block head %}
-  <!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
-  <link href="/assets/sass/main.css" rel="stylesheet">
+<link href="/assets/sass/main.css" rel="stylesheet">
 {% endblock %}
 
-<!-- Edit the header -->
-<!-- Header code examples can be found at https://service-manual.nhs.uk/design-system/components/header -->
 {% block header %}
   {{ header({
     service: {
       text: serviceName,
-      href: "/"
+      href: "/what-is-healthstore"
+    },
+    navigation: {
+      items: [
+        {
+          text: "What is Healthstore",
+          href: "/what-is-healthstore"
+        },
+        {
+          text: "Commissioner onboarding guidance",
+          href: "/commissioner-onboarding-guidance"
+        },
+        {
+          text: "Clinician deployment guidance",
+          href: "/clinician-deployment-guidance"
+        },
+        {
+          text: "Supplier onboarding guidance",
+          href: "/supplier-onboarding-guidance"
+        },
+        {
+          text: "Community and contribution",
+          href: "Community-and-contibution"
+        }
+      ]
     }
   }) }}
-{% endblock %}
+  <div class="nhsuk-width-container">
+    <div class="nhsuk-phase-banner">
+      <p class="nhsuk-phase-banner__content">
+        <strong class="nhsuk-tag nhsuk-phase-banner__content__tag">Alpha</strong>
+        <span class="nhsuk-phase-banner__text">This is a mockup for testing purposes only</span>
+      </p>
+    </div>
+  </div>
+  {% endblock %}
 
-<!-- Edit the footer -->
-<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
 {% block footer %}
   {% set metaAboutHtml %}
-    <p class="nhsuk-body-s">Built on <a class="nhsuk-footer__list-item-link" href="https://prototype-kit.service-manual.nhs.uk/updates/">NHS prototype kit {{ prototypeKitVersion }}</a> and <a class="nhsuk-footer__list-item-link" href="https://github.com/nhsuk/nhsuk-frontend/releases/">NHS.UK frontend {{ nhsukFrontendVersion }}</a></p>
+<p class="nhsuk-body-s">Built on <a class="nhsuk-footer__list-item-link" href="https://prototype-kit.service-manual.nhs.uk/updates/">NHS prototype kit {{ prototypeKitVersion }}</a> and <a class="nhsuk-footer__list-item-link" href="https://github.com/nhsuk/nhsuk-frontend/releases/">NHS.UK frontend {{ nhsukFrontendVersion }}</a></p>
   {% endset %}
-
   {{ footer({
     meta: {
       items: [
@@ -49,6 +73,6 @@
 
 {% block bodyEnd %}
   {{ super() }}
-  <script type="module" src="/assets/javascript/main.js"></script>
+<script type="module" src="/assets/javascript/main.js"></script>
   {% block pageScripts %}{% endblock %}
 {% endblock %}

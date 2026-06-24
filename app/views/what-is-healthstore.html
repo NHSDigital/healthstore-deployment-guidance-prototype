@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+      <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+      <ol class="nhsuk-contents-list__list">
+        <li class="nhsuk-contents-list__item" aria-current="page">
+          <span class="nhsuk-contents-list__current">What is HealthStore</span>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="#for-commissioners">For commissioners</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="#for-clinicians">For clinicians</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="#for-patients">For patients</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1>What is HealthStore</h1>
+    <p>HealthStore is an NHS service to help the safe and efficient roll out of apps that support people with long-term health conditions.</p>
+    <p>These apps are called digital therapeutics. They have been tested in clinical trials and shown to help people stay out of hospital and feel better day to day.</p>
+    <p>To be listed on HealthStore, an app must be approved by NICE (the National Institute for Health and Care Excellence).</p>
+
+    <h2 id="for-commissioners">For commissioners</h2>
+    <p>HealthStore makes it easier for commissioners to find and choose approved apps for their local population.</p>
+    <p>All the apps on HealthStore have already been checked and approved. This means commissioners do not need to carry out their own checks. They can use HealthStore to:</p>
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>browse approved apps</li>
+      <li>choose the right app for their area</li>
+      <li>sign legal and assurance agreements in one place</li>
+    </ul>
+
+    <h2 id="for-clinicians">For clinicians</h2>
+    <p>Once a commissioner has signed up to HealthStore, clinicians in that area can start prescribing apps to their patients.</p>
+    <p>HealthStore gives clinicians:</p>
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>clear clinical pathways to follow</li>
+      <li>access to NICE-approved apps for their patients</li>
+      <li>ready-made resources to help embed the apps into their day-to-day work</li>
+    </ul>
+
+    <h2 id="for-patients">For patients</h2>
+    <p>If your clinician prescribes a HealthStore app, you will get access to a digital therapeutic — an app designed to help you manage a long-term health condition.</p>
+    <p>These apps can help you:</p>
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>manage your condition yourself, at home</li>
+      <li>feel better in your everyday life</li>
+    </ul>
+
+  </div>
+
+</div>
+{% endblock %}
