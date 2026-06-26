@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}How digital therapeutics can improve patient outcomes – Why digital therapeutics? – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Why digital therapeutics?", href: "/v2/why-digital-therapeutics" }
+    ],
+    text: "How digital therapeutics can improve patient outcomes",
+    href: "/v2/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this section">
+      <h2 class="nhsuk-contents-list__title">Contents</h2>
+      <ol class="nhsuk-contents-list__list">
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/v2/why-digital-therapeutics">Why digital therapeutics?</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/v2/why-digital-therapeutics/clinical-benefits-and-evidence">Clinical benefits and evidence</a>
+        </li>
+        <li class="nhsuk-contents-list__item" aria-current="page">
+          <span class="nhsuk-contents-list__current">How digital therapeutics can improve patient outcomes</span>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/v2/why-digital-therapeutics/alignment-with-nhs-ten-year-plan">Alignment with NHS Ten year plan</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">How digital therapeutics can improve patient outcomes</h1>
+
+    <p>Digital therapeutics can improve patient outcomes in several ways.</p>
+
+    <h2 class="nhsuk-heading-m">Support behaviour change over time</h2>
+
+    <p>Sustained behaviour change around exercise, diet, medication adherence and symptom monitoring is difficult to achieve in short clinical encounters. Digital therapeutics create the daily touchpoints that support lasting change.</p>
+
+    <h2 class="nhsuk-heading-m">Build confidence to self-manage</h2>
+
+    <p>Patients uncertain about what is safe to do often disengage from recovery. A digital therapeutic provides structure and reassurance that builds confidence to act independently. This can help reduce anxiety-driven contacts and unnecessary appointments.</p>
+
+    <h2 class="nhsuk-heading-m">Extend the reach of a clinical programme</h2>
+
+    <p>For patients who cannot access in-person services, due to geography, work or caring responsibilities, a digital therapeutic may be the only structured support available. For patients who have completed a clinical programme, it provides a follow-on that preserves the gains made.</p>
+
+    <h2 class="nhsuk-heading-m">Reduce pressure on services</h2>
+
+    <p>Evidence from deployed digital therapeutics shows reductions in unplanned GP contacts, emergency department attendances and hospital readmissions for patients who engage with structured digital support.</p>
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/v2/why-digital-therapeutics/clinical-benefits-and-evidence">Previous: Clinical benefits and evidence</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v2/why-digital-therapeutics/alignment-with-nhs-ten-year-plan">Next: Alignment with NHS Ten year plan</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

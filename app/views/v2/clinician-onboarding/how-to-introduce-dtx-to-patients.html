@@ -1,0 +1,94 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}How to introduce digital therapeutics to your patients – Clinician onboarding guidance – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Clinician onboarding guidance", href: "/v2/clinician-onboarding" }
+    ],
+    text: "How to introduce digital therapeutics to your patients",
+    href: "/v2/clinician-onboarding/how-to-introduce-dtx-to-patients"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this section">
+      <h2 class="nhsuk-contents-list__title">Contents</h2>
+      <ol class="nhsuk-contents-list__list">
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/v2/clinician-onboarding">Clinician onboarding guidance</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/v2/clinician-onboarding/how-it-works">How it works</a>
+        </li>
+        <li class="nhsuk-contents-list__item" aria-current="page">
+          <span class="nhsuk-contents-list__current">How to introduce digital therapeutics to your patients</span>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/v2/clinician-onboarding/integration-with-clinical-software">Integration with clinical software</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/v2/clinician-onboarding/overcoming-barriers-to-adoption">Overcoming barriers to adoption</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">How to introduce digital therapeutics to your patients</h1>
+
+    <h2 class="nhsuk-heading-m">Language to use</h2>
+
+    <p>One of the most important variables in whether a patient engages with a digital therapeutic is the clinical conversation at the point of referral.</p>
+
+    <p>Patients who understand why they have been given it, and who feel their clinician considers it part of their care, are significantly more likely to complete onboarding and continue using it.</p>
+
+    <table class="nhsuk-table">
+      <caption class="nhsuk-table__caption">Suggested language when introducing digital therapeutics</caption>
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" scope="col">Say this</th>
+          <th role="columnheader" scope="col">Avoid this</th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">"I'm recommending this as part of your treatment"</td>
+          <td class="nhsuk-table__cell">"There's an app you might want to try"</td>
+        </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">"This has been prescribed for your recovery"</td>
+          <td class="nhsuk-table__cell">"You could have a look at this if you want"</td>
+        </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">"This is part of your care — it's free and approved by the NHS"</td>
+          <td class="nhsuk-table__cell">"It's just a digital thing, give it a go"</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>At the next clinical contact, ask how the patient is getting on with the app.</p>
+
+    <h2 class="nhsuk-heading-m">Digital therapeutic as integral part of the treatment</h2>
+
+    <p>We know that some people can be actively hostile to using digital therapeutics. One clinician talked about them 'going against the tacit shared social contract that in-person help is best'.</p>
+
+    <p>Some people may think they are being 'fobbed off' by being given an app. Research shows that making it clear that it is part of their treatment can go some way to mitigating this with some patients.</p>
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/v2/clinician-onboarding/how-it-works">Previous: How it works</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v2/clinician-onboarding/integration-with-clinical-software">Next: Integration with clinical software</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
