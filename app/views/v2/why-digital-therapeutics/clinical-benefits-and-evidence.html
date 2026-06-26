@@ -1,0 +1,101 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Clinical benefits and evidence – Why digital therapeutics? – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Why digital therapeutics?", href: "/why-digital-therapeutics" }
+    ],
+    text: "Clinical benefits and evidence",
+    href: "/why-digital-therapeutics/clinical-benefits-and-evidence"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this section">
+      <h2 class="nhsuk-contents-list__title">Contents</h2>
+      <ol class="nhsuk-contents-list__list">
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/why-digital-therapeutics">Why digital therapeutics?</a>
+        </li>
+        <li class="nhsuk-contents-list__item" aria-current="page">
+          <span class="nhsuk-contents-list__current">Clinical benefits and evidence</span>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes">How digital therapeutics can improve patient outcomes</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/why-digital-therapeutics/alignment-with-nhs-ten-year-plan">Alignment with NHS Ten year plan</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Clinical benefits and evidence</h1>
+
+    <p>Digital therapeutics have been tested extensively in clinical trials. This table shows some of the evidence produced in trials in the UK.</p>
+
+    <table class="nhsuk-table">
+      <caption class="nhsuk-table__caption nhsuk-u-visually-hidden">Clinical trial evidence from UK programmes</caption>
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" scope="col">Condition</th>
+          <th role="columnheader" scope="col">What the evidence shows</th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">NHS Digital Weight Management trials</td>
+          <td class="nhsuk-table__cell">63,937 referrals; 45% completion; mean −3.9 kg weight loss for completers; higher BAME uptake than traditional routes</td>
+        </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">COPD: Airedale NHS FT</td>
+          <td class="nhsuk-table__cell">1,000+ COPD patients enrolled in MyCare24 remote monitoring. Trial showed reduced emergency admissions; clinician-published statement confirms reduced need for clinical contact.</td>
+        </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">COPD: NHS Grampian</td>
+          <td class="nhsuk-table__cell">Hospital admissions: 6 → 0 at 5 months; inhaler technique improved from 48% to 91%; rescue inhaler use down 33%; fewer unscheduled GP appointments.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>All products on NHS HealthStore have been recommended by NICE. Below are headline outcomes from deployed programmes across the two conditions currently available.</p>
+
+    <table class="nhsuk-table">
+      <caption class="nhsuk-table__caption nhsuk-u-visually-hidden">Outcomes from deployed NHS HealthStore programmes</caption>
+      <thead role="rowgroup" class="nhsuk-table__head">
+        <tr role="row">
+          <th role="columnheader" scope="col">Condition</th>
+          <th role="columnheader" scope="col">What the evidence shows</th>
+        </tr>
+      </thead>
+      <tbody class="nhsuk-table__body">
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">Cardiac rehabilitation</td>
+          <td class="nhsuk-table__cell">KiActiv, deployed at Liverpool University Hospitals, showed a significant reduction in emergency heart failure readmissions. myHeart, developed at Dorset County Hospital, helped the trust exceed NHS England's 2028 cardiac rehab targets.</td>
+        </tr>
+        <tr role="row" class="nhsuk-table__row">
+          <td class="nhsuk-table__cell">COPD pulmonary rehabilitation</td>
+          <td class="nhsuk-table__cell">KiActiv's Long COVID programme in Suffolk and North East Essex ICS reported a £9 return on investment for every £1 spent, with 304 programme completions. Digital pulmonary rehab tools consistently show improved completion rates compared to in-person programmes, which nationally reach only 13% of eligible patients.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/why-digital-therapeutics">Previous: Why digital therapeutics?</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes">Next: How digital therapeutics can improve patient outcomes</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

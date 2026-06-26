@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Alignment with NHS Ten year plan – Why digital therapeutics? – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Why digital therapeutics?", href: "/why-digital-therapeutics" }
+    ],
+    text: "Alignment with NHS Ten year plan",
+    href: "/why-digital-therapeutics/alignment-with-nhs-ten-year-plan"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this section">
+      <h2 class="nhsuk-contents-list__title">Contents</h2>
+      <ol class="nhsuk-contents-list__list">
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/why-digital-therapeutics">Why digital therapeutics?</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/why-digital-therapeutics/clinical-benefits-and-evidence">Clinical benefits and evidence</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes">How digital therapeutics can improve patient outcomes</a>
+        </li>
+        <li class="nhsuk-contents-list__item" aria-current="page">
+          <span class="nhsuk-contents-list__current">Alignment with NHS Ten year plan</span>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Alignment with NHS Ten year plan</h1>
+
+    <p>NHS HealthStore is named in the <a href="https://www.england.nhs.uk/long-term-plan/">NHS ten year plan</a>. Scaling digital therapeutics is part of a wider NHS move towards digital-first, pathway-led care. It fits in with the priorities within the NHSE National Strategy, helping shift from:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>Sickness to prevention</li>
+      <li>Analogue to digital</li>
+      <li>Hospital to community</li>
+    </ul>
+
+    <p>Not only will it help patient outcomes, but it will also be a major contributor to system productivity, workforce sustainability, operational performance, and patient outcomes.</p>
+
+    <p>By providing an effective 'service wrapper' and mechanisms for scaling up best practice, the NHS HealthStore service will fight the inequity described by the Tudor Hart Inverse Care Law, that can sometimes be associated with digital transformation.</p>
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes">Previous: How digital therapeutics can improve patient outcomes</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}For patients – What is NHS HealthStore? – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "What is NHS HealthStore?", href: "/what-is-nhs-healthstore" }
+    ],
+    text: "For patients",
+    href: "/what-is-nhs-healthstore/for-patients"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this section">
+      <h2 class="nhsuk-contents-list__title">Contents</h2>
+      <ol class="nhsuk-contents-list__list">
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/what-is-nhs-healthstore">What is NHS HealthStore?</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/what-is-nhs-healthstore/for-commissioners">For commissioners</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/what-is-nhs-healthstore/for-clinicians">For clinicians</a>
+        </li>
+        <li class="nhsuk-contents-list__item" aria-current="page">
+          <span class="nhsuk-contents-list__current">For patients</span>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/what-is-nhs-healthstore/for-suppliers">For suppliers</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">For patients</h1>
+
+    <p>For patients, HealthStore is a means by which they can be prescribed digital therapeutics, or 'apps', to help them:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>self-manage their long term conditions</li>
+      <li>improve their everyday quality of life</li>
+    </ul>
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/what-is-nhs-healthstore/for-clinicians">Previous: For clinicians</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/what-is-nhs-healthstore/for-suppliers">Next: For suppliers</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

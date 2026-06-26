@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}For commissioners – What is NHS HealthStore? – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "What is NHS HealthStore?", href: "/what-is-nhs-healthstore" }
+    ],
+    text: "For commissioners",
+    href: "/what-is-nhs-healthstore/for-commissioners"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this section">
+      <h2 class="nhsuk-contents-list__title">Contents</h2>
+      <ol class="nhsuk-contents-list__list">
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/what-is-nhs-healthstore">What is NHS HealthStore?</a>
+        </li>
+        <li class="nhsuk-contents-list__item" aria-current="page">
+          <span class="nhsuk-contents-list__current">For commissioners</span>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/what-is-nhs-healthstore/for-clinicians">For clinicians</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/what-is-nhs-healthstore/for-patients">For patients</a>
+        </li>
+        <li class="nhsuk-contents-list__item">
+          <a class="nhsuk-contents-list__link" href="/what-is-nhs-healthstore/for-suppliers">For suppliers</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">For commissioners</h1>
+
+    <p>The NHS HealthStore website connects suppliers of NICE-approved digital therapeutics with commissioners. It helps commissioners to:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>access clinically-proven digital therapeutics</li>
+      <li>understand funding models and benefit from templated legal agreements</li>
+      <li>embed digital therapeutics into best practice clinical pathways</li>
+    </ul>
+
+    <p>The NHS HealthStore service can help commissioning bodies assess which digital therapeutics are most suited to their population. It can also support their procurement and effective roll out.</p>
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/what-is-nhs-healthstore">Previous: What is NHS HealthStore?</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/what-is-nhs-healthstore/for-clinicians">Next: For clinicians</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
