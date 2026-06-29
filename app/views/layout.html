@@ -65,3 +65,18 @@
           href: "/",
           text: "Home"
         },
+        {
+          href: "/prototype-admin/reset?returnPage=" + (currentPage | urlencode),
+          text: "Reset data"
+        }
+      ],
+      html: metaAboutHtml
+    }
+  }) }}
+{% endblock %}
+
+{% block bodyEnd %}
+  {{ super() }}
+  <script type="module" src="/assets/javascript/main.js"></script>
+  {% block pageScripts %}{% endblock %}
+{% endblock %}
