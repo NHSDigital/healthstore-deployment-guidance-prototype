@@ -1,0 +1,103 @@
+// Side navigation - two-level pattern (NHS Notify style)
+
+.nhsuk-side-nav {
+  margin-bottom: nhsuk-spacing(6);
+}
+
+.nhsuk-side-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Top-level section items
+.nhsuk-side-nav__item {
+  border-left: 4px solid $color_nhsuk-grey-4;
+  margin-bottom: 0;
+}
+
+// Section heading when expanded (active section)
+.nhsuk-side-nav__section-heading {
+  display: block;
+  padding: nhsuk-spacing(2) nhsuk-spacing(3);
+  @include nhsuk-font(16, $weight: bold);
+  color: $color_nhsuk-black;
+  border-left: 4px solid $color_nhsuk-blue;
+  margin-left: -4px;
+}
+
+// Section link when collapsed (inactive section)
+.nhsuk-side-nav__section-link {
+  display: block;
+  padding: nhsuk-spacing(2) nhsuk-spacing(3);
+  @include nhsuk-font(16);
+  color: $color_nhsuk-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $color_nhsuk-black;
+    text-decoration: underline;
+  }
+}
+
+// Nested page list under active section
+.nhsuk-side-nav__nested-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: $color_nhsuk-white;
+}
+
+.nhsuk-side-nav__nested-item {
+  border-top: 1px solid $color_nhsuk-grey-4;
+}
+
+.nhsuk-side-nav__link {
+  display: block;
+  padding: nhsuk-spacing(2) nhsuk-spacing(3);
+  @include nhsuk-font(16);
+  color: $color_nhsuk-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $color_nhsuk-black;
+    text-decoration: underline;
+  }
+}
+
+// H3 sub-list under current page
+.nhsuk-side-nav__h3-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nhsuk-side-nav__h3-item {
+  border-top: 1px solid $color_nhsuk-grey-4;
+}
+
+.nhsuk-side-nav__h3-link {
+  display: block;
+  padding: nhsuk-spacing(1) nhsuk-spacing(3) nhsuk-spacing(1) nhsuk-spacing(5);
+  @include nhsuk-font(14);
+  color: $color_nhsuk-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $color_nhsuk-black;
+    text-decoration: underline;
+  }
+}
+
+// Current page item
+.nhsuk-side-nav__nested-item--current {
+  border-left: 4px solid $color_nhsuk-blue;
+  margin-left: -4px;
+
+  span {
+    display: block;
+    padding: nhsuk-spacing(2) nhsuk-spacing(3);
+    @include nhsuk-font(16, $weight: bold);
+    color: $color_nhsuk-black;
+  }
+}

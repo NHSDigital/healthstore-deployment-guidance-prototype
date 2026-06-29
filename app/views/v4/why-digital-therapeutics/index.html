@@ -1,0 +1,77 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Why digital therapeutics? – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" }
+    ],
+    text: "Why digital therapeutics?",
+    href: "/v2/why-digital-therapeutics"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this guide">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/what-is-nhs-healthstore">What is NHS HealthStore?</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/what-good-looks-like">What good looks like and case studies</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <span class="nhsuk-side-nav__section-heading">Why digital therapeutics?</span>
+          <ul class="nhsuk-side-nav__nested-list">
+            <li class="nhsuk-side-nav__nested-item nhsuk-side-nav__nested-item--current" aria-current="page">
+              <span>Why digital therapeutics?</span>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/why-digital-therapeutics/clinical-benefits-and-evidence">Clinical benefits and evidence</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes">How digital therapeutics can improve patient outcomes</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/why-digital-therapeutics/alignment-with-nhs-ten-year-plan">Alignment with NHS Ten year plan</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/patients-guidance">Patients guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/clinician-onboarding">Clinician onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/supplier-onboarding">Supplier onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/commissioner-onboarding">Commissioner onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/assets-to-download">Assets to download and communications kit</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Why digital therapeutics?</h1>
+
+    <p>Digital therapeutics are not wellness apps. They are embedded in clinically-validated programmes designed to support specific health conditions.</p>
+
+    <p>They have evidence behind them in the same way that a medication or a physical therapy programme has evidence behind it.</p>
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v2/why-digital-therapeutics/clinical-benefits-and-evidence">Next: Clinical benefits and evidence</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

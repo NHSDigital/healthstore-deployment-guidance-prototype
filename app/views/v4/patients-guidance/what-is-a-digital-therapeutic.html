@@ -1,0 +1,79 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}I've been prescribed a digital therapeutic – what is it? – Patients guidance – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Patients guidance", href: "/v2/patients-guidance" }
+    ],
+    text: "I've been prescribed a digital therapeutic – what is it?",
+    href: "/v2/patients-guidance/what-is-a-digital-therapeutic"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this guide">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/what-is-nhs-healthstore">What is NHS HealthStore?</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/what-good-looks-like">What good looks like and case studies</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/why-digital-therapeutics">Why digital therapeutics?</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <span class="nhsuk-side-nav__section-heading">Patients guidance</span>
+          <ul class="nhsuk-side-nav__nested-list">
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/patients-guidance">Patients guidance</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item nhsuk-side-nav__nested-item--current" aria-current="page">
+              <span>I've been prescribed a digital therapeutic – what is it?</span>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/patients-guidance/how-dtx-can-help-you">How digital therapeutics can help you</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/clinician-onboarding">Clinician onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/supplier-onboarding">Supplier onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/commissioner-onboarding">Commissioner onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/assets-to-download">Assets to download and communications kit</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">I've been prescribed a digital therapeutic – what is it?</h1>
+
+    <p>The NHS has started to prescribe apps to help you manage long term health conditions. These are sometimes called 'digital therapeutics' and are prescribed to you as part of your care plan.</p>
+
+    <p>They are paid for by the NHS and free for you to use. All of the apps or 'digital therapeutics' the NHS prescribes have been through strict trials and have been recommended for use by the National Institute For Clinical Excellence (NICE).</p>
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/v2/patients-guidance">Previous: Patients guidance</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v2/patients-guidance/how-dtx-can-help-you">Next: How digital therapeutics can help you</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
