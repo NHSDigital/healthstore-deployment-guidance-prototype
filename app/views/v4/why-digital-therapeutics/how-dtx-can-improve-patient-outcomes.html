@@ -6,10 +6,10 @@
   {{ breadcrumb({
     items: [
       { text: "Home", href: "/" },
-      { text: "Why digital therapeutics?", href: "/v2/why-digital-therapeutics" }
+      { text: "Why digital therapeutics?", href: "/v4/why-digital-therapeutics" }
     ],
     text: "How digital therapeutics can improve patient outcomes",
-    href: "/v2/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes"
+    href: "/v4/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes"
   }) }}
 {% endblock %}
 
@@ -17,59 +17,33 @@
 <div class="nhsuk-grid-row">
 
   <div class="nhsuk-grid-column-one-quarter">
-    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this guide">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
       <ul class="nhsuk-side-nav__list">
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/what-is-nhs-healthstore">What is NHS HealthStore?</a>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/why-digital-therapeutics">Why digital therapeutics?</a>
         </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/what-good-looks-like">What good looks like and case studies</a>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/why-digital-therapeutics/clinical-benefits-and-evidence">Clinical benefits and evidence</a>
         </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <span class="nhsuk-side-nav__section-heading">Why digital therapeutics?</span>
-          <ul class="nhsuk-side-nav__nested-list">
-            <li class="nhsuk-side-nav__nested-item">
-              <a class="nhsuk-side-nav__link" href="/v2/why-digital-therapeutics">Why digital therapeutics?</a>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">How digital therapeutics can improve patient outcomes</span>
+          <ul class="nhsuk-side-nav__h3-list">
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes#support-behaviour-change">Support behaviour change over time</a>
             </li>
-            <li class="nhsuk-side-nav__nested-item">
-              <a class="nhsuk-side-nav__link" href="/v2/why-digital-therapeutics/clinical-benefits-and-evidence">Clinical benefits and evidence</a>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes#build-confidence">Build confidence to self-manage</a>
             </li>
-            <li class="nhsuk-side-nav__nested-item nhsuk-side-nav__nested-item--current" aria-current="page">
-              <span>How digital therapeutics can improve patient outcomes</span>
-              <ul class="nhsuk-side-nav__h3-list">
-                <li class="nhsuk-side-nav__h3-item">
-                  <a class="nhsuk-side-nav__h3-link" href="/v2/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes#support-behaviour-change">Support behaviour change over time</a>
-                </li>
-                <li class="nhsuk-side-nav__h3-item">
-                  <a class="nhsuk-side-nav__h3-link" href="/v2/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes#build-confidence">Build confidence to self-manage</a>
-                </li>
-                <li class="nhsuk-side-nav__h3-item">
-                  <a class="nhsuk-side-nav__h3-link" href="/v2/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes#extend-the-reach">Extend the reach of a clinical programme</a>
-                </li>
-                <li class="nhsuk-side-nav__h3-item">
-                  <a class="nhsuk-side-nav__h3-link" href="/v2/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes#reduce-pressure">Reduce pressure on services</a>
-                </li>
-              </ul>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes#extend-the-reach">Extend the reach of a clinical programme</a>
             </li>
-            <li class="nhsuk-side-nav__nested-item">
-              <a class="nhsuk-side-nav__link" href="/v2/why-digital-therapeutics/alignment-with-nhs-ten-year-plan">Alignment with NHS Ten year plan</a>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes#reduce-pressure">Reduce pressure on services</a>
             </li>
           </ul>
         </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/patients-guidance">Patients guidance</a>
-        </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/clinician-onboarding">Clinician onboarding guidance</a>
-        </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/supplier-onboarding">Supplier onboarding guidance</a>
-        </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/commissioner-onboarding">Commissioner onboarding guidance</a>
-        </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/assets-to-download">Assets to download and communications kit</a>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/why-digital-therapeutics/alignment-with-nhs-ten-year-plan">Alignment with NHS Ten year plan</a>
         </li>
       </ul>
     </nav>
@@ -99,9 +73,9 @@
 
     <div class="nhsuk-navigation-link-page">
       <p>
-        <a href="/v2/why-digital-therapeutics/clinical-benefits-and-evidence">Previous: Clinical benefits and evidence</a>
+        <a href="/v4/why-digital-therapeutics/clinical-benefits-and-evidence">Previous: Clinical benefits and evidence</a>
         &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="/v2/why-digital-therapeutics/alignment-with-nhs-ten-year-plan">Next: Alignment with NHS Ten year plan</a>
+        <a href="/v4/why-digital-therapeutics/alignment-with-nhs-ten-year-plan">Next: Alignment with NHS Ten year plan</a>
       </p>
     </div>
 

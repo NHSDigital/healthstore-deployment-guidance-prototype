@@ -6,10 +6,10 @@
   {{ breadcrumb({
     items: [
       { text: "Home", href: "/" },
-      { text: "Clinician onboarding guidance", href: "/v2/clinician-onboarding" }
+      { text: "Clinician onboarding guidance", href: "/v4/clinician-onboarding" }
     ],
     text: "How it works",
-    href: "/v2/clinician-onboarding/how-it-works"
+    href: "/v4/clinician-onboarding/how-it-works"
   }) }}
 {% endblock %}
 
@@ -17,65 +17,39 @@
 <div class="nhsuk-grid-row">
 
   <div class="nhsuk-grid-column-one-quarter">
-    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this guide">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
       <ul class="nhsuk-side-nav__list">
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/what-is-nhs-healthstore">What is NHS HealthStore?</a>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding">Clinician onboarding guidance</a>
         </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/what-good-looks-like">What good looks like and case studies</a>
-        </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/why-digital-therapeutics">Why digital therapeutics?</a>
-        </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/patients-guidance">Patients guidance</a>
-        </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <span class="nhsuk-side-nav__section-heading">Clinician onboarding guidance</span>
-          <ul class="nhsuk-side-nav__nested-list">
-            <li class="nhsuk-side-nav__nested-item">
-              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding">Clinician onboarding guidance</a>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">How it works</span>
+          <ul class="nhsuk-side-nav__h3-list">
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/how-it-works#getting-started">Getting started and setup with NHS HealthStore</a>
             </li>
-            <li class="nhsuk-side-nav__nested-item nhsuk-side-nav__nested-item--current" aria-current="page">
-              <span>How it works</span>
-              <ul class="nhsuk-side-nav__h3-list">
-                <li class="nhsuk-side-nav__h3-item">
-                  <a class="nhsuk-side-nav__h3-link" href="/v2/clinician-onboarding/how-it-works#getting-started">Getting started and setup with NHS HealthStore</a>
-                </li>
-                <li class="nhsuk-side-nav__h3-item">
-                  <a class="nhsuk-side-nav__h3-link" href="/v2/clinician-onboarding/how-it-works#simplified-workflow">A simplified NHS HealthStore workflow</a>
-                </li>
-                <li class="nhsuk-side-nav__h3-item">
-                  <a class="nhsuk-side-nav__h3-link" href="/v2/clinician-onboarding/how-it-works#example-workflow-copd">Example workflow: COPD annual review</a>
-                </li>
-                <li class="nhsuk-side-nav__h3-item">
-                  <a class="nhsuk-side-nav__h3-link" href="/v2/clinician-onboarding/how-it-works#example-workflow-discharge">Example workflow: prescribing at hospital discharge</a>
-                </li>
-                <li class="nhsuk-side-nav__h3-item">
-                  <a class="nhsuk-side-nav__h3-link" href="/v2/clinician-onboarding/how-it-works#clinical-governance">Clinical and information governance</a>
-                </li>
-              </ul>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/how-it-works#simplified-workflow">A simplified NHS HealthStore workflow</a>
             </li>
-            <li class="nhsuk-side-nav__nested-item">
-              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding/how-to-introduce-dtx-to-patients">How to introduce digital therapeutics to your patients</a>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/how-it-works#example-workflow-copd">Example workflow: COPD annual review</a>
             </li>
-            <li class="nhsuk-side-nav__nested-item">
-              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding/integration-with-clinical-software">Integration with clinical software</a>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/how-it-works#example-workflow-discharge">Example workflow: prescribing at hospital discharge</a>
             </li>
-            <li class="nhsuk-side-nav__nested-item">
-              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding/overcoming-barriers-to-adoption">Overcoming barriers to adoption</a>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/how-it-works#clinical-governance">Clinical and information governance</a>
             </li>
           </ul>
         </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/supplier-onboarding">Supplier onboarding guidance</a>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/how-to-introduce-dtx-to-patients">How to introduce digital therapeutics to your patients</a>
         </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/commissioner-onboarding">Commissioner onboarding guidance</a>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/integration-with-clinical-software">Integration with clinical software</a>
         </li>
-        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
-          <a class="nhsuk-side-nav__section-link" href="/v2/assets-to-download">Assets to download and communications kit</a>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/overcoming-barriers-to-adoption">Overcoming barriers to adoption</a>
         </li>
       </ul>
     </nav>
@@ -137,9 +111,9 @@
 
     <div class="nhsuk-navigation-link-page">
       <p>
-        <a href="/v2/clinician-onboarding">Previous: Clinician onboarding guidance</a>
+        <a href="/v4/clinician-onboarding">Previous: Clinician onboarding guidance</a>
         &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="/v2/clinician-onboarding/how-to-introduce-dtx-to-patients">Next: How to introduce digital therapeutics to your patients</a>
+        <a href="/v4/clinician-onboarding/how-to-introduce-dtx-to-patients">Next: How to introduce digital therapeutics to your patients</a>
       </p>
     </div>
 
