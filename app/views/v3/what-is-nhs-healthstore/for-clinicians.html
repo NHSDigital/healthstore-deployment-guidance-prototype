@@ -1,0 +1,91 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}For clinicians – What is NHS HealthStore? – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "What is NHS HealthStore?", href: "/v2/what-is-nhs-healthstore" }
+    ],
+    text: "For clinicians",
+    href: "/v2/what-is-nhs-healthstore/for-clinicians"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this guide">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <span class="nhsuk-side-nav__section-heading">What is NHS HealthStore?</span>
+          <ul class="nhsuk-side-nav__nested-list">
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/what-is-nhs-healthstore">What is NHS HealthStore?</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/what-is-nhs-healthstore/for-commissioners">For commissioners</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item nhsuk-side-nav__nested-item--current" aria-current="page">
+              <span>For clinicians</span>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/what-is-nhs-healthstore/for-patients">For patients</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/what-is-nhs-healthstore/for-suppliers">For suppliers</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/what-good-looks-like">What good looks like and case studies</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/why-digital-therapeutics">Why digital therapeutics?</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/patients-guidance">Patients guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/clinician-onboarding">Clinician onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/supplier-onboarding">Supplier onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/commissioner-onboarding">Commissioner onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/assets-to-download">Assets to download and communications kit</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">For clinicians</h1>
+
+    <p>When a commissioning body begins using the HealthStore service then clinicians in this territory can begin to prescribe digital therapeutics to their patients.</p>
+
+    <p>They can benefit from:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>approved clinical pathways</li>
+      <li>access to NICE-approved digital therapeutics for their patients</li>
+      <li>centrally-tested communications and support embedding it into their local workflows</li>
+    </ul>
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/v2/what-is-nhs-healthstore/for-commissioners">Previous: For commissioners</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v2/what-is-nhs-healthstore/for-patients">Next: For patients</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

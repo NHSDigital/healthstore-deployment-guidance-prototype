@@ -1,0 +1,128 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Integration with clinical software – Clinician onboarding guidance – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Clinician onboarding guidance", href: "/v2/clinician-onboarding" }
+    ],
+    text: "Integration with clinical software",
+    href: "/v2/clinician-onboarding/integration-with-clinical-software"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this guide">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/what-is-nhs-healthstore">What is NHS HealthStore?</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/what-good-looks-like">What good looks like and case studies</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/why-digital-therapeutics">Why digital therapeutics?</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/patients-guidance">Patients guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <span class="nhsuk-side-nav__section-heading">Clinician onboarding guidance</span>
+          <ul class="nhsuk-side-nav__nested-list">
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding">Clinician onboarding guidance</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding/how-it-works">How it works</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding/how-to-introduce-dtx-to-patients">How to introduce digital therapeutics to your patients</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item nhsuk-side-nav__nested-item--current" aria-current="page">
+              <span>Integration with clinical software</span>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding/overcoming-barriers-to-adoption">Overcoming barriers to adoption</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/supplier-onboarding">Supplier onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/commissioner-onboarding">Commissioner onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/assets-to-download">Assets to download and communications kit</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Integration with clinical software</h1>
+
+    <h2 class="nhsuk-heading-m">Prescribing via DM+D</h2>
+
+    <p>Conceptually the recommendation of a digital therapeutic is treated like a prescription, as part of a care plan and clinical pathway. It should always be something which is talked through with the patient prior to prescription.</p>
+
+    <p>The practical means of triggering the digital therapeutic onboarding journey is the electronic prescription service, accessed via the DM+D dropdown in electronic patient records software.</p>
+
+    <h3 class="nhsuk-heading-s">Fallbacks for paper prescribers</h3>
+
+    <p>For those who do not use EPS to prescribe but use FP10 forms, the journey can be initiated by an alternative route. [Content to be added — see draft notes on QR code unhappy path route.]</p>
+
+    <h2 class="nhsuk-heading-m">Communications via NHS App and onboarding journey</h2>
+
+    <p>Once you have prescribed a patient a digital therapeutic, the NHS HealthStore service will trigger NHS Notify to send the patient a message via the NHS App.</p>
+
+    <p>They will then be prompted to download the relevant digital therapeutic and log on to it using their NHS Login identity.</p>
+
+    <p>If they do not successfully onboard onto the app within 7 days after the initial prompt they will receive an SMS reminder.</p>
+
+    <p>The prescription remains valid for 12 months after the initial prescription.</p>
+
+    <h2 class="nhsuk-heading-m">If they do not have the NHS app installed</h2>
+
+    <p>Patients who do not have the NHS app installed will receive an SMS message. They may need help installing the app and getting P9 verification.</p>
+
+    <p>There are a number of resources available to help people install the NHS App:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li><a href="https://digital.nhs.uk/services/nhs-app/toolkit/step-by-step-guide">NHS App step by step guide</a></li>
+      <li><a href="https://www.nhs.uk/nhs-app/setting-up/">Setting up the NHS App</a></li>
+    </ul>
+
+    <p>Research shows that whilst many people may struggle to install an app, if they are helped to do so, they are sufficiently skilled to use it.</p>
+
+    <p>Some clinical settings have had success in using non-clinical 'digital navigators' to help onboard people.</p>
+
+    <h2 class="nhsuk-heading-m">Patients who do not use smartphones</h2>
+
+    <p>Some digital therapeutics can be used via desktop or laptop-based browsers.</p>
+
+    <p>The NHS App can also be accessed via desktop or laptop-based browsers. For patients who prefer to access this way then this route is possible.</p>
+
+    <p>They can be notified via SMS.</p>
+
+    <h2 class="nhsuk-heading-m">Fallbacks and none-digital routes</h2>
+
+    <p>[Content to be added — including SMS diagram and letter fallback routes.]</p>
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/v2/clinician-onboarding/how-to-introduce-dtx-to-patients">Previous: How to introduce digital therapeutics to your patients</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v2/clinician-onboarding/overcoming-barriers-to-adoption">Next: Overcoming barriers to adoption</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,131 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}How it works – Clinician onboarding guidance – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Clinician onboarding guidance", href: "/v2/clinician-onboarding" }
+    ],
+    text: "How it works",
+    href: "/v2/clinician-onboarding/how-it-works"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this guide">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/what-is-nhs-healthstore">What is NHS HealthStore?</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/what-good-looks-like">What good looks like and case studies</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/why-digital-therapeutics">Why digital therapeutics?</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/patients-guidance">Patients guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <span class="nhsuk-side-nav__section-heading">Clinician onboarding guidance</span>
+          <ul class="nhsuk-side-nav__nested-list">
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding">Clinician onboarding guidance</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item nhsuk-side-nav__nested-item--current" aria-current="page">
+              <span>How it works</span>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding/how-to-introduce-dtx-to-patients">How to introduce digital therapeutics to your patients</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding/integration-with-clinical-software">Integration with clinical software</a>
+            </li>
+            <li class="nhsuk-side-nav__nested-item">
+              <a class="nhsuk-side-nav__link" href="/v2/clinician-onboarding/overcoming-barriers-to-adoption">Overcoming barriers to adoption</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/supplier-onboarding">Supplier onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/commissioner-onboarding">Commissioner onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--section">
+          <a class="nhsuk-side-nav__section-link" href="/v2/assets-to-download">Assets to download and communications kit</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">How it works</h1>
+
+    <h2 class="nhsuk-heading-m">Getting started and setup with NHS HealthStore</h2>
+
+    <p>You will be told when the commissioning organisation your practice or clinical setting is part of joins the NHS HealthStore. You may be part of the clinical conversations around what to commission and why.</p>
+
+    <p>Once they have commissioned a digital therapeutic(s) via the service you will be told what it is and when it will become available.</p>
+
+    <p>You will receive a deployment pack and toolkit to help you understand how you integrate onto the service.</p>
+
+    <h2 class="nhsuk-heading-m">A simplified NHS HealthStore workflow</h2>
+
+    <p>There are five main components of the HealthStore service flow, which are the:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>commissioning body</li>
+      <li>HealthStore service</li>
+      <li>clinical setting</li>
+      <li>NHS App</li>
+      <li>digital therapeutic app</li>
+    </ul>
+
+    <p>This diagram shows how the entities are related in the journey from commissioning to prescribing.</p>
+
+    <h2 class="nhsuk-heading-m">The main different models</h2>
+
+    <p>[Content to be added]</p>
+
+    <h2 class="nhsuk-heading-m">Clinical and information governance</h2>
+
+    <h3 class="nhsuk-heading-s">Exemplar pathways</h3>
+
+    <p>NHS HealthStore has worked with clinical bodies and the Getting It Right First Time (GIRFT) group to develop exemplar GIRFT pathways for using a digital therapeutic for each condition covered by the NHS HealthStore Service.</p>
+
+    <p>Following these pathways is strongly advised but is not mandatory.</p>
+
+    <h3 class="nhsuk-heading-s">Clear clinical lead</h3>
+
+    <p>Each pathway will need its own clinical lead.</p>
+
+    <h3 class="nhsuk-heading-s">Information governance</h3>
+
+    <p>Clinical pathways will be subject to the normal information governance rules.</p>
+
+    <p>However your organisation may be able to benefit from umbrella legal agreements and data sharing agreements established between the commissioning body's and NHS HealthStore as part of its participation in the service.</p>
+
+    <h2 class="nhsuk-heading-m">Example workflow and benefits diagram</h2>
+
+    <p>This diagram shows the clinical workflow.</p>
+
+    <p>[Option to download a PDF of pathway]</p>
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/v2/clinician-onboarding">Previous: Clinician onboarding guidance</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v2/clinician-onboarding/how-to-introduce-dtx-to-patients">Next: How to introduce digital therapeutics to your patients</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
