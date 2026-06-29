@@ -6,20 +6,20 @@
 {% extends "prototype-kit-template.njk" %}
 
 {% block head %}
-<link href="/assets/sass/main.css" rel="stylesheet">
+  <link href="/assets/css/main.css" rel="stylesheet">
 {% endblock %}
 
 {% block header %}
   {{ header({
     service: {
       text: serviceName,
-      href: "/v2/index"
+      href: "/v2"
     },
     navigation: {
       items: [
         {
-          text: "What is Healthstore",
-          href: "/what-is-healthstore"
+          text: "What is HealthStore",
+          href: "/v2/what-is-nhs-healthstore"
         },
         {
           text: "What good looks like",
@@ -27,19 +27,20 @@
         },
         {
           text: "Clinician deployment guidance",
-          href: "/clinician-deployment-guidance"
-        },{
+          href: "/v2/clinician-onboarding"
+        },
+        {
           text: "Information for patients",
-          href: "/available-conditions"
-        }{
+          href: "/v2/patients-guidance"
+        },
+        {
           text: "Condition specific guidance",
-          href: "/available-conditions"
+          href: "/v2/available-conditions"
         },
         {
           text: "Supplier onboarding guidance",
-          href: "/supplier-onboarding-guidance"
-        },
-        
+          href: "/v2/supplier-onboarding"
+        }
       ]
     }
   }) }}
@@ -51,11 +52,11 @@
       </p>
     </div>
   </div>
-  {% endblock %}
+{% endblock %}
 
 {% block footer %}
   {% set metaAboutHtml %}
-<p class="nhsuk-body-s">Built on <a class="nhsuk-footer__list-item-link" href="https://prototype-kit.service-manual.nhs.uk/updates/">NHS prototype kit {{ prototypeKitVersion }}</a> and <a class="nhsuk-footer__list-item-link" href="https://github.com/nhsuk/nhsuk-frontend/releases/">NHS.UK frontend {{ nhsukFrontendVersion }}</a></p>
+    <p class="nhsuk-body-s">Built on <a class="nhsuk-footer__list-item-link" href="https://prototype-kit.service-manual.nhs.uk/updates/">NHS prototype kit {{ prototypeKitVersion }}</a> and <a class="nhsuk-footer__list-item-link" href="https://github.com/nhsuk/nhsuk-frontend/releases/">NHS.UK frontend {{ nhsukFrontendVersion }}</a></p>
   {% endset %}
   {{ footer({
     meta: {
@@ -64,18 +65,3 @@
           href: "/",
           text: "Home"
         },
-        {
-          href: "/prototype-admin/reset?returnPage=" + (currentPage | urlencode),
-          text: "Reset data"
-        }
-      ],
-      html: metaAboutHtml
-    }
-  }) }}
-{% endblock %}
-
-{% block bodyEnd %}
-  {{ super() }}
-<script type="module" src="/assets/javascript/main.js"></script>
-  {% block pageScripts %}{% endblock %}
-{% endblock %}
