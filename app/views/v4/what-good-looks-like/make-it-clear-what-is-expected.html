@@ -1,0 +1,91 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Make it clear what is expected of patients and keep it simple – What good looks like and case studies – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "What good looks like and case studies", href: "/v4/what-good-looks-like" }
+    ],
+    text: "Make it clear what is expected of patients and keep it simple",
+    href: "/v4/what-good-looks-like/make-it-clear-what-is-expected"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like">What good looks like and case studies</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/digital-therapeutics-need-to-be-embedded">Digital therapeutics need to be embedded into a service or pathway</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/understanding-patients-digital-capabilities">Find ways of understanding patients' digital capabilities</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/targeted-human-support-for-digital-inclusion">Use targeted human support to enable digital inclusion</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/local-partners-and-third-sector">Make the most of local partners and third sector organisations to help deliver digital inclusion work</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">Make it clear what is expected of patients and keep it simple</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Make it clear what is expected of patients and keep it simple</h1>
+
+    <h2 class="nhsuk-heading-m">Using digital therapeutics for remote monitoring</h2>
+
+    <p>In West Yorkshire, patients spoke warmly about MyCare24, a COPD remote monitoring service that ran from Airedale Hospital in 2021, with patients using the Luscii app, with remote monitoring via a 'virtual hospital' model.</p>
+
+    <p>Each day, patients entered two readings (pulse and oxygen level, using an oximeter), a fairly easy and quick task. If someone's readings were not normal, the virtual team was alerted and a nurse would be allocated to call for help. As one nurse put it, a patient can enter a reading at 3am and know someone will call if there is a concern.</p>
+
+    <p>The results were striking. For 232 patients, comparing the six months before and after they joined, COPD-related hospital days fell by 63% and emergency admissions by 29%.</p>
+
+    {% from "do-dont-list/macro.njk" import list %}
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-one-half">
+        {{ list({
+          title: "Do",
+          icon: "tick",
+          items: [
+      { text: "keep data entry requirement small: a couple of readings, once a day" },
+      { text: "act on the readings quickly, and tell the patient what you have done" },
+      { text: "use the data to spot patterns and target extra support" }
+          ]
+        }) }}
+      </div>
+      <div class="nhsuk-grid-column-one-half">
+        {{ list({
+          title: "Don't",
+          icon: "cross",
+          items: [
+      { text: "collect readings that no one reviews or acts on" },
+      { text: "leave patients unsure what happens if their numbers are bad" },
+      { text: "assume older patients will not take part" }
+          ]
+        }) }}
+      </div>
+    </div>
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/v4/what-good-looks-like/local-partners-and-third-sector">Previous: Make the most of local partners and third sector organisations to help deliver digital inclusion work</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
