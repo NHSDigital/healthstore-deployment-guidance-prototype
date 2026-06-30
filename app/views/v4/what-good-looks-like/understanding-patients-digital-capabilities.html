@@ -55,9 +55,7 @@
 
     {% from "do-dont-list/macro.njk" import list %}
 
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-one-half">
-        {{ list({
+    {{ list({
           title: "Do",
           icon: "tick",
           items: [
@@ -66,9 +64,8 @@
       { text: "keep it up to date, because confidence and ability can change over time" }
           ]
         }) }}
-      </div>
-      <div class="nhsuk-grid-column-one-half">
-        {{ list({
+
+    {{ list({
           title: "Don't",
           icon: "cross",
           items: [
@@ -77,8 +74,6 @@
       { text: "contact everyone the same way, such as online only" }
           ]
         }) }}
-      </div>
-    </div>
 
     <div class="nhsuk-navigation-link-page">
       <p>

@@ -61,9 +61,7 @@
 
     {% from "do-dont-list/macro.njk" import list %}
 
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-one-half">
-        {{ list({
+    {{ list({
           title: "Do",
           icon: "tick",
           items: [
@@ -72,9 +70,8 @@
       { text: "put the most support where the need is greatest" }
           ]
         }) }}
-      </div>
-      <div class="nhsuk-grid-column-one-half">
-        {{ list({
+
+    {{ list({
           title: "Don't",
           icon: "cross",
           items: [
@@ -83,8 +80,6 @@
       { text: "assume a digital-only service reaches everyone" }
           ]
         }) }}
-      </div>
-    </div>
 
     <div class="nhsuk-navigation-link-page">
       <p>

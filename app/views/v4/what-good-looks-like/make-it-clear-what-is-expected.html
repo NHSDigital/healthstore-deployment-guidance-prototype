@@ -55,9 +55,7 @@
 
     {% from "do-dont-list/macro.njk" import list %}
 
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-one-half">
-        {{ list({
+    {{ list({
           title: "Do",
           icon: "tick",
           items: [
@@ -66,9 +64,8 @@
       { text: "use the data to spot patterns and target extra support" }
           ]
         }) }}
-      </div>
-      <div class="nhsuk-grid-column-one-half">
-        {{ list({
+
+    {{ list({
           title: "Don't",
           icon: "cross",
           items: [
@@ -77,8 +74,6 @@
       { text: "assume older patients will not take part" }
           ]
         }) }}
-      </div>
-    </div>
 
     <div class="nhsuk-navigation-link-page">
       <p>
