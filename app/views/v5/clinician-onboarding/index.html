@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Clinician onboarding guidance – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" }
+    ],
+    text: "Clinician onboarding guidance",
+    href: "/v4/clinician-onboarding"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">Clinician onboarding guidance</span>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/how-it-works">How it works</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/how-to-introduce-dtx-to-patients">How to introduce digital therapeutics (DTx) to your patients</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/integration-with-clinical-software">Integration with clinical software</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/overcoming-barriers-to-adoption">Overcoming barriers to using DTx</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Clinician onboarding guidance</h1>
+
+    <p>This guidance supports clinicians who are setting up and using NHS HealthStore to prescribe digital therapeutics (DTx) to their patients.</p>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/clinician-onboarding/how-it-works">Next: How it works</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

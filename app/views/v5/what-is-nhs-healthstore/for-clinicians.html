@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}For clinicians – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "What the NHS HealthStore is", href: "/v4/what-is-nhs-healthstore" }
+    ],
+    text: "For clinicians",
+    href: "/v4/what-is-nhs-healthstore/for-clinicians"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore">What the NHS HealthStore is</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-commissioners">For commissioners</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">For clinicians</span>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-patients">For patients</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-suppliers">For suppliers</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">For clinicians</h1>
+
+    <p>When a commissioner begins using the NHS HealthStore, clinicians within their area can recommend digital therapeutics (DTx) to their patients.</p>
+
+    <p>The NHS HealthStore helps clinicians by:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>providing a suite of clinically-validated apps, wearables, and remote monitoring tools</li>
+      <li>enabling clinicians to deliver first-line treatments and support for long-term conditions while patients wait for appointments</li>
+      <li>promoting patient self-management of minor symptoms and health tracking, enabling clinicians to focus their time and resources on complex cases that require direct, face-to-face intervention</li>
+      <li>linking directly into the Single Patient Record (SPR), clinicians gain a more complete, longitudinal view of a patient's health history and active intervention</li>
+      <li>enabling them to track real-time health data (such as blood pressure or oxygen levels) self-reported by patients through their devices</li>
+    </ul>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/what-is-nhs-healthstore/for-commissioners">Previous: For commissioners</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v4/what-is-nhs-healthstore/for-patients">Next: For patients</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

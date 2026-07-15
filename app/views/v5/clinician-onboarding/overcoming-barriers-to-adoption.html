@@ -1,0 +1,111 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Overcoming barriers to using DTx – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Clinician onboarding guidance", href: "/v4/clinician-onboarding" }
+    ],
+    text: "Overcoming barriers to using DTx",
+    href: "/v4/clinician-onboarding/overcoming-barriers-to-adoption"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding">Clinician onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/how-it-works">How it works</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/how-to-introduce-dtx-to-patients">How to introduce digital therapeutics (DTx) to your patients</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/integration-with-clinical-software">Integration with clinical software</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">Overcoming barriers to using DTx</span>
+          <ul class="nhsuk-side-nav__h3-list">
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/overcoming-barriers-to-adoption#assessing-digital-skills">Assessing a patients' digital capabilities</a>
+            </li>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/overcoming-barriers-to-adoption#in-person-help">Using in-person help to support adoption</a>
+            </li>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/overcoming-barriers-to-adoption#supporting-nhs-app">Supporting patients in using the NHS App</a>
+            </li>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/overcoming-barriers-to-adoption#local-partners">Working with local partners and third-sector organisations</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Overcoming barriers to using DTx</h1>
+
+    <p>Refer to <a href="/v4/what-good-looks-like">Case studies and best practice</a> for more examples of best practice.</p>
+
+    <h2 class="nhsuk-heading-m" id="assessing-digital-skills">Assessing a patients' digital capabilities</h2>
+
+    <p>By assessing a patient's digital capabilities as part of routine clinical contact, practitioners can increase the likelihood of the care pathway being well matched to the patient's digital capabilities.</p>
+
+    <p>At the Roxton Practice in North Lincolnshire, they implemented a formal scoring system showing patients' digital capabilities.</p>
+
+    <p>This was then incorporated into pathways that would define the type of communications each patient would receive.</p>
+
+    <p>More resources:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>Can we link to the Roxton TPP source code?</li>
+      <li><a href="https://www.kingsfund.org.uk/insight-and-analysis/long-reads/exclusion-inclusion-digital-health-care">Moving from exclusion to inclusion in digital care</a></li>
+    </ul>
+
+    <h2 class="nhsuk-heading-m" id="in-person-help">Using in-person help to support adoption</h2>
+
+    <p>Systematic and targeted in-person help can support people in onboarding to apps. This help can be provided by people with limited clinical training.</p>
+
+    <p>More resources:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>Case study link?</li>
+      <li><a href="https://www.kingsfund.org.uk/insight-and-analysis/long-reads/exclusion-inclusion-digital-health-care">Moving from exclusion to inclusion in digital care</a></li>
+    </ul>
+
+    <h2 class="nhsuk-heading-m" id="supporting-nhs-app">Supporting patients in using the NHS App</h2>
+
+    <p>Research shows that while many people may struggle to install an app, if they are helped to do so, they will use it once it's installed.</p>
+
+    <p>Some clinical settings have successfully used non-clinical 'digital navigators' to help onboard people.</p>
+
+    <p>There are several resources available to help people install the NHS App:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li><a href="https://digital.nhs.uk/services/nhs-app/toolkit/step-by-step-guide">NHS App step by step guide</a></li>
+      <li><a href="https://www.nhs.uk/nhs-app/setting-up/">Setting up the NHS App</a></li>
+    </ul>
+
+    <h2 class="nhsuk-heading-m" id="local-partners">Working with local partners and third-sector organisations</h2>
+
+    <p>Many practices that have successfully helped people onboard The NHS App and DTx have worked with other organisations within their neighbourhood or local area. Taking this multi-agency approach can help address complex health and care needs.</p>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/clinician-onboarding/integration-with-clinical-software">Previous: Integration with clinical software</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

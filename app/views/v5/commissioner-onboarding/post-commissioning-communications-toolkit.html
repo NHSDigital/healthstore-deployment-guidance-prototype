@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Post commissioning communications toolkit – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Commissioner onboarding guidance", href: "/v4/commissioner-onboarding" }
+    ],
+    text: "Post commissioning communications toolkit",
+    href: "/v4/commissioner-onboarding/post-commissioning-communications-toolkit"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/commissioner-onboarding">Commissioner onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/commissioner-onboarding/what-you-need-in-place">What you need in place to become a commissioner of NHS HealthStore</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/commissioner-onboarding/setting-up-an-account">Setting up an account</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/commissioner-onboarding/business-case-template">Business case template</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/commissioner-onboarding/data-sharing-agreement-template">Data sharing agreement template</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/commissioner-onboarding/checklist-for-successful-onboarding">Checklist for successful onboarding</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/commissioner-onboarding/checklist-for-successful-implementation">Checklist for successful implementation</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">Post commissioning communications toolkit</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Post commissioning communications toolkit</h1>
+
+    <p>[Content to be added]</p>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/commissioner-onboarding/checklist-for-successful-implementation">Previous: Checklist for successful implementation</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

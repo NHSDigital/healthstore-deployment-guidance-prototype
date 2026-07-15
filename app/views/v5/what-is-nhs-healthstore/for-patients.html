@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}For patients – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "What the NHS HealthStore is", href: "/v4/what-is-nhs-healthstore" }
+    ],
+    text: "For patients",
+    href: "/v4/what-is-nhs-healthstore/for-patients"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore">What the NHS HealthStore is</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-commissioners">For commissioners</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-clinicians">For clinicians</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">For patients</span>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-suppliers">For suppliers</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">For patients</h1>
+
+    <p>The NHS HealthStore enables patients to easily find and use NHS-approved health apps recommended by their clinician. These apps help people manage long-term health conditions on their own, including mental health conditions, heart surgery rehabilitation, and diabetes. The apps are sometimes referred to as Digital Therapeutics (DTx).</p>
+
+    <p>The NHS HealthStore helps patients by:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>only providing safe apps checked by the <a href="https://www.nice.org.uk/">National Institute for Health and Care Excellence</a> to ensure it works properly and protects your private data</li>
+      <li>enabling patients to manage their own health without always needing to visit a doctor</li>
+      <li>enabling patients who are waiting for medical care to use these approved apps to help track and ease symptoms</li>
+      <li>connecting to the NHS App and enabling patients to easily link their personal health devices</li>
+    </ul>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/what-is-nhs-healthstore/for-clinicians">Previous: For clinicians</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v4/what-is-nhs-healthstore/for-suppliers">Next: For suppliers</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

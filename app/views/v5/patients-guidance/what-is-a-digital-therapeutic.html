@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Helping you understand what a Digital Therapeutic (DTx) is – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Guidance for patients", href: "/v4/patients-guidance" }
+    ],
+    text: "Helping you understand what a Digital Therapeutic (DTx) is",
+    href: "/v4/patients-guidance/what-is-a-digital-therapeutic"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/patients-guidance">Guidance for patients</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">Helping you understand what a Digital Therapeutic (DTx) is</span>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/patients-guidance/how-dtx-can-help-you">How digital therapeutics (DTx) can help you</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Helping you understand what a Digital Therapeutic (DTx) is</h1>
+
+    <p>Via the NHS HealthStore, the NHS prescribes apps to help you manage long-term health conditions. These apps are sometimes called digital therapeutics (DTx) and are prescribed to you by a clinician as part of your care plan. They are paid for by the NHS and free for you to use.</p>
+
+    <p>All the apps or DTxs the NHS prescribes have undergone rigorous trials and are authorised by the National Institute for Health and Care Excellence (NICE).</p>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/patients-guidance">Previous: Guidance for patients</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v4/patients-guidance/how-dtx-can-help-you">Next: How digital therapeutics (DTx) can help you</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

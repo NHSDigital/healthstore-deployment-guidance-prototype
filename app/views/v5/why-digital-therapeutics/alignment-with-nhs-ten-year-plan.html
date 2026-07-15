@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Alignment with The NHS 10-Year Health Plan – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Why NHS England is an advocate of Digital Therapeutics (DTx)", href: "/v4/why-digital-therapeutics" }
+    ],
+    text: "Alignment with The NHS 10-Year Health Plan",
+    href: "/v4/why-digital-therapeutics/alignment-with-nhs-ten-year-plan"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/why-digital-therapeutics">Why NHS England is an advocate of Digital Therapeutics (DTx)</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/why-digital-therapeutics/clinical-benefits-and-evidence">Evidence of Digital Therapeutics (DTx) success</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes">How digital therapeutics (DTx) improve patient outcomes</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">Alignment with The NHS 10-Year Health Plan</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Alignment with The NHS 10-Year Health Plan</h1>
+
+    <p>The NHS HealthStore is named in the <a href="https://www.england.nhs.uk/long-term-plan/">The NHS 10-Year Health Plan</a>. Scaling digital therapeutics (DTx) is part of a wider NHS move towards digital-first, pathway-led care and will help support a shift from:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>sickness to prevention</li>
+      <li>analogue to digital</li>
+      <li>hospital to community</li>
+    </ul>
+
+    <p><strong>From sickness to prevention</strong> focuses on catching illnesses early. <strong>From analogue to digital</strong> uses apps and data to put you in control of your health. <strong>From hospital to community</strong> moves care from big buildings to local hubs near your home.</p>
+
+    <p>In addition to improving patient outcomes, DTx will be a major contributor to system productivity, workforce sustainability, and operational performance.</p>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/why-digital-therapeutics/how-dtx-can-improve-patient-outcomes">Previous: How digital therapeutics (DTx) improve patient outcomes</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Digital therapeutics (DTx) must embed into a service or pathway – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Case studies and best practice", href: "/v4/what-good-looks-like" }
+    ],
+    text: "Digital therapeutics (DTx) must embed into a service or pathway",
+    href: "/v4/what-good-looks-like/digital-therapeutics-need-to-be-embedded"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like">Case studies and best practice</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">Digital therapeutics (DTx) must embed into a service or pathway</span>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/understanding-patients-digital-capabilities">Find ways of understanding patients' digital capabilities</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/targeted-human-support-for-digital-inclusion">Using targeted human support to enable digital inclusion</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/local-partners-and-third-sector">Utilising local partners and third-sector organisations to help deliver digital inclusion work</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/make-it-clear-what-is-expected">Make it clear what is expected of patients and keep it simple</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Digital therapeutics (DTx) must embed into a service or pathway</h1>
+
+    <p>From research, we know that digital therapeutics (DTx) are most successful when embedded into a clinical pathway. Patients are referred to a clinical service, and the DTx app is built into that service.</p>
+
+    <p>When patients are introduced to DTx, but do not receive ongoing support in using them, the benefits to them are often unclear. An unsupported rollout also poses the risk of widening health inequalities.</p>
+
+    <blockquote style="border-left: 4px solid #d8dde0; padding-left: 24px; margin-left: 0;">
+      <p>"We refer to a service from general practice. We don't even talk about the technology so much. The therapeutic is an option within an established pathway."</p>
+      <p>"Bad deployment of technology exacerbates health inequalities. When you go fully digital – the danger is people just vanish. We saw that in COVID."</p>
+      <footer><cite>Dr James Cowling, Roxton Practice, North East Lincolnshire</cite></footer>
+    </blockquote>
+
+    <p>At Roxton, a DTx became part of the COPD pathway, led by one named respiratory consultant. Other clinicians can refer patients to that pathway. The team also built additional support for patients with low digital confidence.</p>
+
+    <p>Read more: <a href="https://www.kingsfund.org.uk/insight-and-analysis/long-reads/exclusion-inclusion-digital-health-care">Moving from digital exclusion to inclusion in digital health and care</a>, The King's Fund</p>
+
+    {% from "do-dont-list/macro.njk" import list %}
+
+    {{ list({
+      title: "Do",
+      icon: "tick",
+      items: [
+      { text: "make the digital tool part of an existing care pathway" }
+      { text: "give one named clinician charge of the whole pathway" }
+      { text: "place the most support where the need is greatest" }
+      ]
+    }) }}
+
+    {{ list({
+      title: "Don't",
+      icon: "cross",
+      items: [
+      { text: "refer a DTx to a patient without offering ongoing support" }
+      { text: "leave it unclear as to who is responsible for safety" }
+      { text: "assume a digital-only service is accessible to everyone" }
+      ]
+    }) }}
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/what-good-looks-like">Previous: Case studies and best practice</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v4/what-good-looks-like/understanding-patients-digital-capabilities">Next: Find ways of understanding patients' digital capabilities</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

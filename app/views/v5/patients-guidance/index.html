@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Guidance for patients – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" }
+    ],
+    text: "Guidance for patients",
+    href: "/v4/patients-guidance"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">Guidance for patients</span>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/patients-guidance/what-is-a-digital-therapeutic">Helping you understand what a Digital Therapeutic (DTx) is</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/patients-guidance/how-dtx-can-help-you">How digital therapeutics (DTx) can help you</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Guidance for patients</h1>
+
+    <p>This guidance explains what digital therapeutics are, why your clinician may have recommended one, and how they can help you manage your condition.</p>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/patients-guidance/what-is-a-digital-therapeutic">Next: Helping you understand what a Digital Therapeutic (DTx) is</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

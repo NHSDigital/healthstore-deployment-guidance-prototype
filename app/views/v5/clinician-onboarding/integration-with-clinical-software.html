@@ -1,0 +1,112 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Integration with clinical software – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Clinician onboarding guidance", href: "/v4/clinician-onboarding" }
+    ],
+    text: "Integration with clinical software",
+    href: "/v4/clinician-onboarding/integration-with-clinical-software"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding">Clinician onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/how-it-works">How it works</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/how-to-introduce-dtx-to-patients">How to introduce digital therapeutics (DTx) to your patients</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">Integration with clinical software</span>
+          <ul class="nhsuk-side-nav__h3-list">
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/integration-with-clinical-software#prescribing-via-dmd">Prescribing via DM+D</a>
+            </li>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/integration-with-clinical-software#communications-via-nhs-app">Communications via the NHS App and onboarding journey</a>
+            </li>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/integration-with-clinical-software#no-nhs-app">If they do not have the NHS App installed</a>
+            </li>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/integration-with-clinical-software#no-smartphone">Patients who do not use smartphones</a>
+            </li>
+            <li class="nhsuk-side-nav__h3-item">
+              <a class="nhsuk-side-nav__h3-link" href="/v4/clinician-onboarding/integration-with-clinical-software#fallbacks">Fallbacks and non-digital routes</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/clinician-onboarding/overcoming-barriers-to-adoption">Overcoming barriers to using DTx</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Integration with clinical software</h1>
+
+    <h2 class="nhsuk-heading-m" id="prescribing-via-dmd">Prescribing via DM+D</h2>
+
+    <p>Conceptually, the recommendation of a digital therapeutic (DTx) is treated like a prescription. It's part of a care plan and clinical pathway, and, where applicable, should be discussed with the patient prior to prescribing.</p>
+
+    <p>Patient Records (EPR) software (accessed via the DM+D dropdown) triggers the DTx onboarding journey.</p>
+
+    <h2 class="nhsuk-heading-m" id="communications-via-nhs-app">Communications via the NHS App and onboarding journey</h2>
+
+    <p>Once you have prescribed a patient a DTx, The NHS HealthStore service will trigger NHS Notify to send the patient a message via the NHS App.</p>
+
+    <p>The patient will then be prompted to download the relevant digital therapeutic and log in using their NHS Login identity.</p>
+
+    <p>If the patient does not successfully onboard onto the app within 7 days of the initial prompt, they will receive an SMS reminder.</p>
+
+    <p>The prescription remains valid for 12 months once prescribed.</p>
+
+    <p>[Diagram: NHS App message referring a patient to a DTx for cardiac rehabilitation]</p>
+
+    <p><a href="https://www.figma.com/proto/ObWlKpyQ0KF2F5BqqMgysU/Patient-experience---02?node-id=54989-1773&starting-point-node-id=54989%3A1801">Link to a prototype of the NHS App to digital therapeutic onboarding journey.</a></p>
+
+    <h2 class="nhsuk-heading-m" id="no-nhs-app">If they do not have the NHS App installed</h2>
+
+    <p>Patients who do not have the NHS App installed will receive an SMS message. They may need help installing the app and getting P9 verification.</p>
+
+    <p>There are several resources available to help people install the NHS App including:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li><a href="https://digital.nhs.uk/services/nhs-app/toolkit/step-by-step-guide">NHS App step by step guide</a></li>
+      <li><a href="https://www.nhs.uk/nhs-app/setting-up/">Setting up the NHS App</a></li>
+    </ul>
+
+    <p>Research shows that while many people may struggle to install an app, if they are helped to do so, they are usually sufficiently skilled to use it. Some clinical settings have successfully used non-clinical 'care connectors' or 'digital navigators' to help onboard people.</p>
+
+    <h2 class="nhsuk-heading-m" id="no-smartphone">Patients who do not use smartphones</h2>
+
+    <p>Some DTxs can be used via desktop or laptop-based browsers. The NHS App can also be accessed via desktop or laptop-based browsers.</p>
+
+    <h2 class="nhsuk-heading-m" id="fallbacks">Fallbacks and non-digital routes</h2>
+
+    <p>[Content to be added — including SMS diagram and letter fallback routes.]</p>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/clinician-onboarding/how-to-introduce-dtx-to-patients">Previous: How to introduce digital therapeutics (DTx) to your patients</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v4/clinician-onboarding/overcoming-barriers-to-adoption">Next: Overcoming barriers to using DTx</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

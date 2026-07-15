@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}For suppliers – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "What the NHS HealthStore is", href: "/v4/what-is-nhs-healthstore" }
+    ],
+    text: "For suppliers",
+    href: "/v4/what-is-nhs-healthstore/for-suppliers"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore">What the NHS HealthStore is</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-commissioners">For commissioners</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-clinicians">For clinicians</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-patients">For patients</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">For suppliers</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">For suppliers</h1>
+
+    <p>The NHS HealthStore helps suppliers by acting as a single, centralised digital marketplace. It allows software and app developers to offer verified health products to millions of patients and NHS staff without having to navigate over 250 individual trusts.</p>
+
+    <p>The HealthStore benefits suppliers by:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>providing developers with direct access to a huge market of patients and health care workers</li>
+      <li>enabling a single route to market, meaning they do not need to contact individual hospitals or clinics to sell their apps</li>
+      <li>proving their product is safe, private, and effective by the fact that it has official NHS backing</li>
+      <li>making it easier for suppliers to test and launch new digital health tools</li>
+    </ul>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/what-is-nhs-healthstore/for-patients">Previous: For patients</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

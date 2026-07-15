@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}What you need in place to become an NHS HealthStore supplier – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Supplier onboarding guidance", href: "/v4/supplier-onboarding" }
+    ],
+    text: "What you need in place to become an NHS HealthStore supplier",
+    href: "/v4/supplier-onboarding/what-you-need-in-place"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/supplier-onboarding">Supplier onboarding guidance</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">What you need in place to become an NHS HealthStore supplier</span>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/supplier-onboarding/checklist-for-successful-onboarding">Checklist for successful onboarding</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/supplier-onboarding/content-governance-for-product-information">Content governance for product information</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/supplier-onboarding/terms-and-conditions">Terms and conditions</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">What you need in place to become an NHS HealthStore supplier</h1>
+
+    <p>[Content to be added]</p>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/supplier-onboarding">Previous: Supplier onboarding guidance</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v4/supplier-onboarding/checklist-for-successful-onboarding">Next: Checklist for successful onboarding</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

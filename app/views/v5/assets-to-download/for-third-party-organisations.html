@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}For third party organisations – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "Assets to download and communications kit", href: "/v4/assets-to-download" }
+    ],
+    text: "For third party organisations",
+    href: "/v4/assets-to-download/for-third-party-organisations"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/assets-to-download">Assets to download and communications kit</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/assets-to-download/for-commissioners">For commissioners</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/assets-to-download/for-clinicians">For clinicians</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">For third party organisations</span>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">For third party organisations</h1>
+
+    <p>[Content to be added]</p>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/assets-to-download/for-clinicians">Previous: For clinicians</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}

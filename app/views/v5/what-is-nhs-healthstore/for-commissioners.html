@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}For commissioners – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "What the NHS HealthStore is", href: "/v4/what-is-nhs-healthstore" }
+    ],
+    text: "For commissioners",
+    href: "/v4/what-is-nhs-healthstore/for-commissioners"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore">What the NHS HealthStore is</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">For commissioners</span>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-clinicians">For clinicians</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-patients">For patients</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-is-nhs-healthstore/for-suppliers">For suppliers</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">For commissioners</h1>
+
+    <p>The NHS HealthStore connects suppliers of NICE-approved digital therapeutics with commissioners such as people working for Integrated Care Boards (ICBs).</p>
+
+    <p>The HealthStore helps commissioners to:</p>
+
+    <ul class="nhsuk-list nhsuk-list--bullet">
+      <li>view a catalogue of tools evaluated for clinical and cost-effectiveness by the National Institute for Health and Care Excellence (NICE)</li>
+      <li>safely procure, fund, and roll out clinically-effective digital health technologies at scale</li>
+      <li>standardise funding and pricing, protecting NHS budgets</li>
+      <li>reduce health inequalities by providing patients with access to the same high-quality, NICE-approved digital tools regardless of their location, and supporting standardised care pathways</li>
+    </ul>
+
+
+    <div class="nhsuk-navigation-link-page">
+      <p><a href="/v4/what-is-nhs-healthstore">Previous: What the NHS HealthStore is</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v4/what-is-nhs-healthstore/for-clinicians">Next: For clinicians</a></p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
