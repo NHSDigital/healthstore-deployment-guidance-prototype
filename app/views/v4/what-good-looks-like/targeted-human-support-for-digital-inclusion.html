@@ -1,0 +1,90 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}Use targeted human support to enable digital inclusion – What good looks like and case studies – NHS HealthStore deployment guidance{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      { text: "Home", href: "/" },
+      { text: "What good looks like and case studies", href: "/v4/what-good-looks-like" }
+    ],
+    text: "Use targeted human support to enable digital inclusion",
+    href: "/v4/what-good-looks-like/targeted-human-support-for-digital-inclusion"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-one-quarter">
+    <nav class="nhsuk-side-nav" role="navigation" aria-label="Pages in this section">
+      <ul class="nhsuk-side-nav__list">
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like">What good looks like and case studies</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/digital-therapeutics-need-to-be-embedded">Digital therapeutics need to be embedded into a service or pathway</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/understanding-patients-digital-capabilities">Find ways of understanding patients' digital capabilities</a>
+        </li>
+        <li class="nhsuk-side-nav__item nhsuk-side-nav__item--current" aria-current="page">
+          <span class="nhsuk-side-nav__current">Use targeted human support to enable digital inclusion</span>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/local-partners-and-third-sector">Make the most of local partners and third sector organisations to help deliver digital inclusion work</a>
+        </li>
+        <li class="nhsuk-side-nav__item">
+          <a class="nhsuk-side-nav__link" href="/v4/what-good-looks-like/make-it-clear-what-is-expected">Make it clear what is expected of patients and keep it simple</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="nhsuk-grid-column-three-quarters">
+
+    <h1 class="nhsuk-heading-xl">Use targeted human support to enable digital inclusion</h1>
+
+    <p>The Roxton Practice offers more than one way to use the same service, because one digital route will never suit everyone.</p>
+
+    <p>The practice learned that tablets fixed to the waiting room wall did not work: the people who needed help stayed away. What has worked has been combining technology with human-to-human support.</p>
+
+    <p>People can use their own phone or computer to get care and share their data. Or they can use a computer in the community, a GP surgery, a library, a pharmacy or a workplace, with someone on hand to help. People move between these routes as their needs change.</p>
+
+    <p>The practice puts trained helpers and volunteer "care connectors" where people already go. They can help patients set up the NHS App and use it to track a condition and send in readings.</p>
+
+    <p>The practice has found that employing non-clinical staff to help assist people with technology in the waiting areas has paid off for them financially, and is now considering how it reorganises its lobby areas to offer more rooms for private one-to-one digital support from non-clinical staff.</p>
+
+    {% from "do-dont-list/macro.njk" import list %}
+
+    {{ list({
+          title: "Do",
+          icon: "tick",
+          items: [
+      { text: "offer high-tech, low-tech and no-tech ways to use the same service" },
+      { text: "put trained helpers where people already go, like libraries" },
+      { text: "let people move between routes as their needs change" }
+          ]
+        }) }}
+
+    {{ list({
+          title: "Don't",
+          icon: "cross",
+          items: [
+      { text: "rely on people having their own device, data or confidence" },
+      { text: "leave technology in public places with no one to help" },
+      { text: "assume a digital-first rollout reaches those who need care most" }
+          ]
+        }) }}
+
+    <div class="nhsuk-navigation-link-page">
+      <p>
+        <a href="/v4/what-good-looks-like/understanding-patients-digital-capabilities">Previous: Find ways of understanding patients' digital capabilities</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/v4/what-good-looks-like/local-partners-and-third-sector">Next: Make the most of local partners and third sector organisations to help deliver digital inclusion work</a>
+      </p>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
