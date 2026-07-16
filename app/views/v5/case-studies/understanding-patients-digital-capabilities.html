@@ -52,16 +52,15 @@
     <p>Each patient is then assigned a digital readiness level, which is reflected in their health record, and staff use it to decide how to reach that person. A digitally confident person might be sent a link. Someone less so might be offered a printed form to complete, or face-to-face help.</p>
 
     <p>All information obtained is incorporated into the NHS Electronic Patient Record (EPR), and clinicians and practice staff are prompted to keep it up to date.</p>
-
-    {% from "do-dont-list/macro.njk" import list %}
+{% from "do-dont-list/macro.njk" import list %}
 
     {{ list({
       title: "Do",
       icon: "tick",
       items: [
-      { text: "check each patient's digital confidence before suggesting a DTx" }
-      { text: "record the patient's 'readiness' in their health record" }
-      { text: "keep the digital readiness level up to date, because digital confidence and ability can change over time" }
+        { text: "check each patient&#39;s digital confidence before suggesting a DTx" },
+        { text: "record the patient&#39;s &#39;readiness&#39; in their health record" },
+        { text: "keep the digital readiness level up to date, because digital confidence and ability can change over time" }
       ]
     }) }}
 
@@ -69,9 +68,9 @@
       title: "Don't",
       icon: "cross",
       items: [
-      { text: "assume capability based on someone's age or background" }
-      { text: "let the readiness level override the patient's choice" }
-      { text: "assume that you will contact everyone in the same way, such as online only" }
+        { text: "assume capability based on someone&#39;s age or background" },
+        { text: "let the readiness level override the patient&#39;s choice" },
+        { text: "assume that you will contact everyone in the same way, such as online only" }
       ]
     }) }}
 
