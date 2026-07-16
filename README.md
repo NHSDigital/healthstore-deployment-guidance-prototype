@@ -1,5 +1,5 @@
-# Your service name goes here
+# Deployment guidance for NHS HealthStore testing purposes
 
-This repo is used as a template for creating new prototypes using the NHS Prototype kit.
+The pages for the deployment guidance artefacts are stored here.
 
-You can edit this README file to add any useful details about running your prototype.
+The website is built + hosted via NHS Heroku, in line with the recommended process for using the prototype kit.
