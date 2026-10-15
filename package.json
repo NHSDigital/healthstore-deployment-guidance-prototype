@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "govuk-frontend": "^6.3.0",
-    "nhsuk-frontend": "^10.4.2",
+    "nhsuk-frontend": "^10.5.2",
     "nhsuk-prototype-kit": "^8.3.0"
   },
   "engines": {
